@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi Sitio de Entretenimiento</title>
+<link rel="stylesheet" href="styles.css">
+<script src="scripts.js" defer></script>
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <div class="logo">MiFlix</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="peliculas.html">Películas</a></li>
+      <li><a href="series.html">Series</a></li>
+      <li><a href="lista.html">Mi Lista</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="main-content">
+  <h2>Top Películas</h2>
+  <section class="movie-list">
+    <!-- Aquí puedes agregar las películas top -->
+    <!-- Asegúrate de cambiar el data-movie-id para cada película -->
+  </section>
+
+  <h2>Todas las Películas</h2>
+  <section class="movie-list">
+    <!-- Película 1 -->
+    <article class="movie" data-movie-id="movie1" data-trailer-url="c:\Users\Maria\Downloads\78492--397882d4-2659-457b-abd8-3e75c2289425--braw--720010-doodstream.mp4">
+        <h3>The Dark Knight</h3>
+        <div class="movie-info">
+            <img src="https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_.jpg" alt="The Dark Knight">
+            <p>Descripción extensa de la película 1...</p>
+            <!-- Botón de Ver -->
+            <button type="button">Ver</button>
+        </div>
+    </article>
+    <!-- Película 2 -->
+    <article class="movie" data-movie-id="movie2" data-trailer-url="URL_DEL_TRAILER">
+        <h3>Interstellar</h3>
+        <div class="movie-info">
+            <img src="c:\Users\Maria\Downloads\MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg" alt="Interstellar">
+            <p>Descripción extensa de la película 2...</p>
+            <!-- Botón de Ver -->
+            <button type="button">Ver</button>
+        </div>
+    </article>
+    <!-- Pelicula 3 -->
+    <article class="movie" data-movie-id="movie3" data-trailer-url="URL_DEL_TRAILER">
+      <h3>Disney Encanto</h3>
+      <div class="movie-info">
+        <img src="https://lumiere-a.akamaihd.net/v1/images/encanto_ka_las_pay1_92ad7410.jpeg?region0%2C0%2C1080%2C1350.jpg"  alt="pelicula Disney">
+        <!-- Botón de Ver -->
+        <button type="button">Ver</button>
+      </div>
+    </article>
+    <!-- Película 4 -->
+    <article class="movie" data-movie-id="movie4" data-trailer-url="URL_DEL_TRAILER">
+      <h3>Dune: Part Two</h3>
+      <div class="movie-info">
+          <img src="https://m.media-amazon.com/images/M/MV5BN2QyZGU4ZDctOWMzMy00NTc5LThlOGQtODhmNDI1NmY5YzAwXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg" alt="Dune: Part Two">
+          <p>Descripción extensa de la película 4...</p>
+          <!-- Botón de Ver -->
+          <button type="button">Ver</button>
+      </div>
+    </article>
+    <!-- Película 5 -->
+    <article class="movie" data-movie-id="movie5" data-trailer-url="URL_DEL_TRAILER">
+      <h3>Joker: Folie à Deux</h3>
+      <div class="movie-info">
+          <img src="https://sm.ign.com/ign_es/photo/j/joker-foli/joker-folie-a-deux-first-poster-shows-a-dancing-joaquin-phoe_8d9v.jpg" alt="Joker: Folie à Deux">
+          <p>Descripción extensa de la película 5...</p>
+          <!-- Botón de Ver -->
+          <button type="button">Ver</button>
+      </div>
+    </article>
+    <!-- Película 6 -->
+    <article class="movie" data-movie-id="movie6" data-trailer-url="URL_DEL_TRAILER">
+      <h3>A Quiet Place: Day One</h3>
+      <div class="movie-info">
+          <img src="URL_DE_LA_IMAGEN" alt="A Quiet Place: Day One">
+          <p>Descripción extensa de la película 6...</p>
+          <!-- Botón de Ver -->
+          <button type="button">Ver</button>
+      </div>
+    </article>
+  </section>
+</main>
+
+<footer class="footer">
+  Derechos de autor © 2024 MiFlix. Todos los derechos reservados.
+</footer>
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">×</span>
+    <iframe id="videoPlayer" width="100%" height="315" src="" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+
+</body>
+</html>
